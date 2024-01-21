@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #27374D;
+}
+
+h2{
+    font-size: 40px;
+    color: white;
+}
+
+button {
+    background-color: #fff;
+    color: #27374D;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+.box1{
+    height: 60px;
+    width: 280px;
+    color: black;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(154, 208, 194);
+}
+.box2{
+    height: 60px;
+    width: 280px;
+    color: black;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(183, 220, 169);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+}
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.container1 button{
+    border-radius: 10px;
+}
+.container1 p{
+    font-size: 25px;
+}
+
+.container2{
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    
+}
+.box3{
+    height: 400px;
+    width: 500px;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 30px;
+    margin-right: 60px;
+    background-color: rgba(211, 186, 27, 0.63);
+}
+.box4{
+    height: 400px;
+    width: 500px;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 30px;
+    margin-left: 60px;
+    background-color: rgb(211, 211, 116);
+}
+.container2 p{
+    font-size: 30px;
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    color: wheat;
+}
+.log{
+    height: 50px;
+    width: 50px;
+    color: white;
+    margin-left: 1400px;
+    position: fixed;
+    cursor: pointer;
+}

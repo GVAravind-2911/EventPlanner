@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'LibreFranklinRegular';
+    src: url('../fonts/LibreFranklin-Regular.ttf');
+}
+@font-face {
+    font-family: 'LibreFranklinBold';
+    src: url('../fonts/LibreFranklin-Bold.ttf');
+}
+@font-face {
+    font-family: 'LibreFranklinLight';
+    src: url('../fonts/LibreFranklin-Light.ttf');
+}
+
+
+.mainContainer{
+    font-family:'LibreFranklinRegular';
+    background-color: #159895;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding-bottom: 60px;
+}
+
+.bodycontainer{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+

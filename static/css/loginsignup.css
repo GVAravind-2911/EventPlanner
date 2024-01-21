@@ -1,0 +1,113 @@
+
+@font-face {
+    font-family: 'LibreFranklinRegular';
+    src: url('../fonts/LibreFranklin-Regular.ttf');
+}
+@font-face {
+    font-family: 'LibreFranklinBold';
+    src: url('../fonts/LibreFranklin-Bold.ttf');
+}
+@font-face {
+    font-family: 'LibreFranklinLight';
+    src: url('../fonts/LibreFranklin-Light.ttf');
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+}
+
+.bodycontainer{
+    margin-top: 150px;
+}
+.buttons{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    top: 180px;
+}
+
+.buttons button{
+    height: 50px;
+    width: 125px;
+    background-color: rgb(183, 220, 169);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-family: 'LibreFranklinRegular';
+    cursor: pointer;
+}
+
+.go button:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding-top: 20px;
+}
+
+.container{
+    height: 400px;
+    width: 400px;
+    background-color: #29ADB2;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style:normal;
+    flex-flow: column;
+    box-shadow: 5px 10px 15px #000000;
+}
+.username input{
+    height: 50px;
+    width: 250px;
+    background-color: rgb(186, 207, 234);
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: black;
+}
+.password input{
+    height: 50px;
+    width: 250px;
+    background-color: rgb(210, 211, 237);
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+.go{
+    position: fixed;
+    top:450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go button{
+    border-radius: 6px;
+    height: 30px;
+    width: 60px;
+    font-family: 'LibreFranklinRegular';
+    background-color: rgb(183, 220, 169);
+    margin-top: 40px;
+    outline: none;
+    border: none;
+}
+

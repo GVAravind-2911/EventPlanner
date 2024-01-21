@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'LibreFranklinRegular';
+    src: url('../fonts/LibreFranklin-Regular.ttf');
+}
+@font-face {
+    font-family: 'LibreFranklinBold';
+    src: url('../fonts/LibreFranklin-Bold.ttf');
+}
+@font-face {
+    font-family: 'LibreFranklinLight';
+    src: url('../fonts/LibreFranklin-Light.ttf');
+}
+
+
+.mainContainer{
+    font-family:'LibreFranklinRegular';
+    background-color: #159895;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding-bottom: 60px;
+}
+
+.bodycontainer{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainHeader{
+    font-size: 70px;
+}
+
+.ruler{
+    width: 100%;
+}
+
+.column{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding-left: 10px;
+    gap:30px;
+}
+
+.contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    gap:100px;
+    width:90%;
+}
+
+.description{
+    width: 100%;
+    height: 240px;
+    border-radius: 15px;
+    font-size: 17px;
+    padding: 10px;
+    font-family: 'LibreFranklinRegular';
+    resize: none;
+    background-color: #F2F7A1;
+}
+
+.textInput{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 60%;
+    font-family: 'LibreFranklinRegular';
+    font-size: 17px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #F2F7A1;
+}
+
+.dropdownCat{
+    width: 60%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'LibreFranklinRegular';
+    font-size: 17px;
+    background-color: #F2F7A1;
+}
+
+.dropdownCat1{
+    width: 90%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'LibreFranklinRegular';
+    font-size: 17px;
+    background-color: #F2F7A1;
+}
+
+.dropdownCat2{
+    width: 65%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'LibreFranklinRegular';
+    font-size: 17px;
+    background-color: #F2F7A1;
+}
+
+.dropdownCat3{
+    width: 60%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'LibreFranklinRegular';
+    font-size: 17px;
+    background-color: #F2F7A1;
+}
+
+.dateInput{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 85%;
+    font-family: 'LibreFranklinRegular';
+    font-size: 17px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #F2F7A1;
+}
+
+.topborder{
+    margin-bottom: -5px;
+}
+
+.uploadButton{
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    font-family: 'LibreFranklinRegular';
+    font-size: 17px;
+    background-color: #F2F7A1;
+}
+
+label.label input[type="file"] {
+    position: absolute;
+    top: -1000px;
+  }
+  .label {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 5px;
+    background: #F2F7A1;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .label:hover {
+    background: #5cbd95;
+  }
+  .label:active {
+    background: #9fa1a0;
+  }
+  .label:invalid+span {
+    color: #000000;
+  }
+  .label:valid+span {
+    color: #ffffff;
+  }
+
+.CreateEventButton{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    font-family: 'LibreFranklinRegular';
+    font-size: 25px;
+    background-color: #F2F7A1;
+    margin-top: 50px;
+}
+
+.CreateEventButton:hover{
+    transition: ease-in-out 0.2s;
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    margin-top: 30px;
+}
+
+.dropdownCat4{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'LibreFranklinRegular';
+    font-size: 17px;
+    background-color: #F2F7A1;
+}
+
+.paymentlinkarea{
+    height: 5vh;
+    width: 100%;
+    padding: 5px;
+    padding-top: 20px;
+    resize: none;
+    border-radius: 10px;
+    font-family: 'LibreFranklinRegular';
+    font-size: 17px;
+    outline: none;
+    border: none;
+    background-color: #F2F7A1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}

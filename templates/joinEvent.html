@@ -1,0 +1,18 @@
+{% extends 'structure.html' %}
+{% block main %}
+    <head>
+        <link rel="stylesheet" href="../static/css/joinEvent.css">
+    </head>
+    <div class="bodycontainer" id="je">
+        <div class="container">
+            {% for item in data %}
+                <a>
+                    <h1>{{  item.id  }}</h1>
+                    <h1>{{  item.eventname  }}</h1>
+                    <h1>{{item.eventcategory  }}</h1>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- <script type='module' src="../static/js/OutputJoinEvent.js"></script> -->
+{% endblock %}
