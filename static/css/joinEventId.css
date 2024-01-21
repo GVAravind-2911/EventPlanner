@@ -92,4 +92,9 @@ a{
 .sometrials{
     align-items: center;
     padding-left: 650px;
+    color: thistle;
+}
+
+body{
+    background-color: #27374D;
 }

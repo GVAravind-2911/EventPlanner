@@ -12,7 +12,7 @@ def home():
     if 'username' not in session:
         return render_template('homeMain.html')
     else:
-        return render_template('homeDashboard.html')
+        return render_template('homeDashboard.html',username = session['username'])
     
 @app.route('/login',methods = ['POST','GET'])
 def login():
@@ -57,6 +57,15 @@ def joinEvent():
         return render_template('joinEvent.html',data = EventTable.getEvents())
     else:
         pass
+
+@app.route('/joinevent/<int:id>')
+def joinEventId(id):
+    return render_template('joinEventId.html',data = EventTable.getEvent(id)[0])
+
+@app.route('/logout')
+def logout():
+    session.pop('username',None)
+    return redirect(url_for('home'))
 
 # @app.route('/send-data')
 # def sendData():

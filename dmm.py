@@ -126,12 +126,32 @@ class EventTable(Base):
         return event_dict
 
     @staticmethod
+    @staticmethod
     def getEvent(id):
         engine = sqlalchemy.create_engine('sqlite:///mainstore.db')
         session = sessionmaker(bind=engine)()
         data = session.query(EventTable).filter(EventTable.id == id).all()
         session.close()
-        return data
+        event_dict = []
+        for event in data:
+            event_dict.append({
+                'id': event.id,
+                'eventname': event.eventname,
+                'eventdescription': event.eventdescription,
+                'eventlogo': event.eventlogo,
+                'eventcategory': event.eventcategory,
+                'eventtype': event.eventtype,
+                'eventreach': event.eventreach,
+                'eventlocation': event.eventlocation,
+                'eventlimit': event.eventlimit,
+                'eventlimitnumber': event.eventlimitnumber,
+                'eventprice': event.eventprice,
+                'eventpaymentlink': event.eventpaymentlink,
+                'eventstartdate': event.eventstartdate,
+                'eventenddate': event.eventenddate,
+                'eventclosingdate': event.eventclosingdate
+            })    
+        return event_dict
 
 
 if __name__ == '__main__':
